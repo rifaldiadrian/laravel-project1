@@ -79,9 +79,9 @@ Route::post('/pakaian/update', [PakaianController::class, 'update']);
 
 
 
+});
 // API
 Route::get('/ListKaryawan', [KaryawanController::class, 'dataKaryawan']);
-});
 Auth::routes();
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 // Route::post('/login', [App\Http\Controllers\DashboardController::class, 'login']);
